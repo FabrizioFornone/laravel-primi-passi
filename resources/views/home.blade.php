@@ -12,18 +12,22 @@
 </head>
 
 <body>
-    <div class="container-fluid vh-100 d-flex justify-content-center align-items-center ">
-        <nav class="d-flex align-items-center">
-            <h1>Benvenuti:</h1>
-            <ul class="d-flex">
+    <nav class="container-fluid vh-100 d-flex justify-content-center align-items-center ">
+        <div class="text-center">
+            <img src="logo/logo.svg" alt="">
+            <h1 class="py-3">Benvenuti</h1>
+            <ul class="d-flex justify-content-center py-3">
                 @foreach ($lista_studenti as $student )
                 <li>
-                    <a class="px-3 d-flex align-items-center" href="#">{{$student}}</a>
+                    <a class="px-5" href="#">{{$student}}</a>
                 </li>
                 @endforeach
             </ul>
-        </nav>
-    </div>
+            <div class="py-3">
+                <h5>L'{{$istituto}} vi accoglie nel corso di {{$corso}}</h5>
+            </div>
+        </div>
+    </nav>
 </body>
 
 </html>

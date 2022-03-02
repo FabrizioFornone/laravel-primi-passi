@@ -21,9 +21,9 @@ Route::get('/home', function () {
         'corso' => 'Economia Aziendale',
         'lista_studenti' => [
             'Fabrizio Fornone',
-            'Federico Etticia',
+            'Mario Etticia',
             'Gianni Giannelli',
-        ]
+        ],
     ];
 
 
