@@ -1,0 +1,23 @@
+.container-fluid {
+    background-color: slategray;
+    color: whitesmoke;
+}
+
+nav {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+nav ul li {
+    height: 100%;
+}
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    height: 100%;
+}

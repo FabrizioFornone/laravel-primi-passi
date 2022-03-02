@@ -13,6 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
+
+
+Route::get('/home', function () {
+    $data = [
+        'istituto' => 'Università degli Studi di Torino',
+        'corso' => 'Economia Aziendale',
+        'lista_studenti' => [
+            'Fabrizio Fornone',
+            'Federico Etticia',
+            'Gianni Giannelli',
+        ]
+    ];
+
+
+    return view('home', $data);
 });
