@@ -17,12 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/home', function () {
     $data = [
-        'istituto' => 'Università degli Studi di Torino',
-        'corso' => 'Economia Aziendale',
-        'lista_studenti' => [
-            'Fabrizio Fornone',
-            'Mario Etticia',
-            'Gianni Giannelli',
+        'loggia' => 'Grande Oriente di Italia',
+        'sede' => 'Torino',
+        'adepts_list' => [
+            'Antonio De Curtis',
+            'Vittorio Amedeo Alfieri',
+            'Giacomo Casanova',
         ],
     ];
 

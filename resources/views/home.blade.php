@@ -17,14 +17,14 @@
             <img src="logo/logo.svg" alt="">
             <h1 class="py-3">Benvenuti</h1>
             <ul class="d-flex justify-content-center py-3">
-                @foreach ($lista_studenti as $student )
+                @foreach ($adepts_list as $adept )
                 <li>
-                    <a class="px-5" href="#">{{$student}}</a>
+                    <a class="px-3" href="#">{{$adept}}</a>
                 </li>
                 @endforeach
             </ul>
             <div class="py-3">
-                <h5>L'{{$istituto}} vi accoglie nel corso di {{$corso}}</h5>
+                <h5>Il {{$loggia}} vi accoglie nella sede di {{$sede}}</h5>
             </div>
         </div>
     </nav>
