@@ -19,7 +19,7 @@
             <ul class="d-flex justify-content-center py-3">
                 @foreach ($adepts_list as $adept )
                 <li>
-                    <a class="px-3" href="#">{{$adept}}</a>
+                    <a class="px-3" href="{{$adept[1]}}">{{$adept[0]}}</a>
                 </li>
                 @endforeach
             </ul>

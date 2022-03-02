@@ -15,17 +15,21 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/home', function () {
+Route::get('/', function () {
     $data = [
         'loggia' => 'Grande Oriente di Italia',
         'sede' => 'Torino',
         'adepts_list' => [
-            'Antonio De Curtis',
-            'Vittorio Amedeo Alfieri',
-            'Giacomo Casanova',
+            ['Antonio De Curtis', 'antonio-de-curtis'],
+            ['Vittorio Amedeo Alfieri', 'vittorio-amedeo-alfieri'],
+            ['Giacomo Casanova', 'giacomo-casanova'],
         ],
     ];
 
 
     return view('home', $data);
 });
+
+Route::view('antonio-de-curtis', 'antonio-de-curtis');
+Route::view('vittorio-amedeo-alfieri', 'vittorio-amedeo-alfieri');
+Route::view('giacomo-casanova', 'giacomo-casanova');
